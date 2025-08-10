@@ -1,6 +1,4 @@
-# n8n-whatsapp-gdrive-assistant
-This project implements a conversational Google Drive assistant. It leverages a Twilio WhatsApp webhook to trigger an n8n workflow, which then executes various file operations (LIST, MOVE, DELETE, SUMMARY) and responds to the user.
-WhatsApp-Driven Google Drive Assistant (n8n)
+####WHATSAPP-DRIVEN GOOGLE DRIVE ASSISTANT (n8n)
 This project is a fully functional WhatsApp-based assistant for managing Google Drive files, built entirely as a workflow in n8n. It allows a user to send simple chat commands via WhatsApp to list, move, delete, and generate AI-powered summaries of their documents.
 
 ✨ Features
@@ -11,6 +9,8 @@ Move Files: Move a file from one folder to another.
 Safe Deletion: Deletes a file only after a specific confirmation command.
 
 AI Summarization: Generate concise, bullet-point summaries of text-based documents (.pdf, .txt, .docx, etc.) using the OpenAI API.
+
+Audit Logging: Every command sent to the assistant is automatically logged in a Google Sheet with a timestamp.
 
 🛠️ Tech Stack
 Automation: n8n (self-hosted via Docker)
@@ -133,4 +133,4 @@ SUMMARY MyDocument.txt
 Generates an AI summary of MyDocument.txt.
 
 📜 License
-This project is licensed under the MIT License.
+This project is licensed under the MIT License
